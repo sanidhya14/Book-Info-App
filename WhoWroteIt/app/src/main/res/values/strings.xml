@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Book Info</string>
+    <string name="instructions">Enter book name</string>
+    <string name="button_text">Search Books</string>
+    <string name="input_hint">Book Title</string>
+    <string name="no_results">no results</string>
+</resources>

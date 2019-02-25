@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/instructions"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/book_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/input_hint"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="@color/complementary" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button"
+        android:onClick="searchBooks"
+        android:paddingStart="8dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="8dp"
+        android:shadowRadius="64"
+        android:text="@string/button_text"
+        android:textColor="@android:color/background_light"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/scrollviewback"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title_text"
+                android:textSize="24dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/headings" />
+
+            <TextView
+                android:id="@+id/authorText"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/headings" />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="italic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
